@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="images/zima-browser-icon.ico"  rel="icon" type="image/x-icon"/>
+    <link href="images/zima-browser-icon.ico"  rel="icon" type="image/x-icon">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
@@ -12,34 +12,49 @@
 <body>
     <h1 class="hidden">Welcome to Zima, Feel The Energy</h1>
     <div id="sticky-head">
-        <header class="grid-con" id="main-header">
-            <nav id="main-nav" class="col-span-full m-col-start-4 m-col-end-11">
+        <header  id="main-header">
+            <nav id="main-nav" class="grid-con" >
                 <h2 class="hidden">Main Navigation</h2>
-                <button id="button"></button>
+                <div id="underlay-btn-txt" class="col-span-full">
+                <div id="button">
+               <img src="images/burger-menu-white-icon.svg" alt="zima menu bar" class="burger-icon col-start-1">
+             </div>
                 <!-- Zima Text Logo start -->
-                <div id="logo" class="col-span-full">
-                    <img src="images/zima-mobile-text-logo-white.svg" alt="Couples Resort Logo">
+                <div id="head-logo">
+                    <img src="images/zima-mobile-text-logo-white.svg" alt="Couples Resort Logo" class=" col-start-3">
+                    <h2 class=" col-start-2 hidden"> Collection</h2>
                 </div>
                  <!-- Zima Text Logo End -->
-                <div id="burger-con" class="no-mobile">
-                    <ul class="no-mobile">
+                </div>
+               
+                <div id="burger-con" class="no-mzobile col-span-full">
+                    <div id="menu-bar"  class="col-span-full">
+                        <img src="images/menu-header.svg" alt="Couples Resort Logo">
+                    </div>
+                    <ul class="no-mobzile">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Collection</a></li>
-                        <li><a href="#">Events</a></li>
+                        <li><a href="collection.html">Collection</a></li>
+                        <li><a href="event.html">Events</a></li>
                         <li><a href="#">Arena</a></li>
                         <li><a href="#">Profile</a></li>
-                        <li class="no-tablet-desktop"><a href="#">Contact Us</a></li>
+                        <li class="no-tablet-desktop"><a href="contact.html">Contact Us</a></li>
                     </ul>
+                    <!-- mini popup footer start -->
+                    <div id="popup-footer">
+                    <img src="images/zima-mobile-text-logo-white.svg" alt="Couples Resort Logo">
+                    <p>Unleash The Brew, Ignite The Power</p>
+                </div>
+                <!-- mini popup footer end -->
                 </div>
                 <!-- User Profile Start -->
-                <div class="profile-circle no-mobile">
+                <div class="profile-circle">
                     <a href="#">
-                    <img src="image/candle1150448.jpg" alt="user profile picture"  class="profile-picture">
+                    <img src="images/dsk-testimoy-1.png" alt="user profile picture"  class="profile-picture">
                 </a>
                 </div>
                  <!-- User Profile End -->
                   <!-- Shop Cart Start -->
-                <a href="#"><img id="cart-1" src="image/shopping_cart.svg" alt="shopping cart icon" class="no-mobile" width="45" height="47"></a>
+                <a href="#"><img id="cart-1" src="images/tb-shop-cart-white-icon.svg" alt="shopping cart icon" width="45" height="47"></a>
                  <!-- Shop Cart End -->
             </nav>
            
