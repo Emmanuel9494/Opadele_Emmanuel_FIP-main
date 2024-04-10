@@ -1,6 +1,3 @@
-body {
-    font-family: 'Merriweather-Regular';
-}
 @font-face {
     font-family: 'Merriweather';
     src: url('../fonts/Merriweather-Black.eot');
@@ -40,6 +37,20 @@ body {
     font-display: swap;
 }
 
+body {
+    font-family: 'Merriweather-Regular';
+    font-size: 16px;
+}
+
+.no-mobile{
+    display: none;
+}
+
+/* header section start */
+header{
+    background-color: black;
+}
+/* header section start */
 
 
 
@@ -60,3 +71,20 @@ body {
     display: flex;
   }
 /* User Profilr End */
+
+
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 140%;
+     }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 180%;
+     }
+
+}
