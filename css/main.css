@@ -208,6 +208,18 @@ header, nav{
         text-align: center;
         margin-top: 20px;
         }
+
+/* home */
+
+.testy {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.right-side {
+    margin-top: 40px;
+}
+
     
 
 /* Events Mobile */
@@ -281,18 +293,110 @@ header, nav{
     margin-bottom: 40px;
 }
 
-.testy {
-    margin-top: 40px;
-    margin-bottom: 40px;
+.bold {
+  font-size: 2rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  padding-top: 15px;
+  border-right: solid 4px black;
 }
 
-.right-side {
-    margin-top: 40px;
+.contact-us {
+    margin: 40px;
+    padding-top: 25px;
+   
 }
 
+/* contact form */
+
+#contact {
+    font-size: 12px;
+    background-color: #efefef;
+    padding-top: 30px;
+    padding-bottom: 30px;
+ }
+ 
+ #contact .grid-con > div {
+    width: 240px;
+    margin: 0 auto;
+ }
 
 
+ #contact-hero-con .grid-con {
+    /* tell other grid to live in middle column */
+    grid-column: 2/3;
+    /* also tell it to stay in first rown instead of another row below
+    to allow overlap to happen */
+    grid-row:1/1;	
+    /* get rid of margin 0 auto from original class */
+    margin: 0;
+}
 
+#contact-hero {
+   object-fit: cover;
+   /* First value controls the x-axis and the second value controls the y-axis,Default value:	50% 50% */
+   object-position: center;
+   height: 195px;
+}
+
+#contact-hero-heading-box {
+   align-self: end;
+}
+
+#contact-hero-text {
+   margin-top: 15px;
+   margin-bottom: 25px;
+}
+
+#contact-hero-address p {
+   margin-bottom: 20px;
+   font-size: 14px;
+   line-height: 22px;
+}
+
+#contact-hero-address {
+   margin-bottom: 30px;
+}
+
+#contact-hero-address h3 {
+   margin-bottom: 25px;
+}
+
+#contact-hero-form form {
+   display: flex;
+   flex-direction: column;
+}
+
+#contact-hero-form input, textarea {
+   padding: 22px;
+   border: 2px solid black;
+   background-color: #f7f7f7;
+   border-radius: 3px;
+   margin-bottom: 30px;
+   font: inherit;
+   width: 100%;
+}
+
+#contact-hero-form textarea {
+   height: 250px;
+}
+
+#contact-hero-form input[type="submit"] {
+   padding: 15px 20px;
+   background: #F78627;
+   color: #fff;
+   border: none;
+   transition: all 200ms ease-in;
+   width: 150px;
+   align-self: flex-end;
+}
+
+#contact-hero-form input[type="submit"]:hover {
+   background-color: black;
+   color: #F78627;
+   border-radius: 0;
+}
 
 
 
