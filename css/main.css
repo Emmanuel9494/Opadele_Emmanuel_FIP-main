@@ -190,7 +190,23 @@ header, nav{
 }
 /* header section end */
 
-/* learn more button */
+
+
+/* video css ------------------------------------------*/
+
+.video-container {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+/* learn more button ----------------------------------*/
 #learn-more {
     background-color: #F78627;
     padding: 15px 20px;
@@ -198,8 +214,8 @@ header, nav{
     justify-content: center;
     text-align: center;
     margin-top: 20px;
-    }
-
+}
+/* ----------------------------------------- */
 #buy-now {
         background-color: #F78627;
         padding: 25px 25px;
@@ -239,10 +255,16 @@ header, nav{
     text-align: right;
 }
 
+.collect-ppp{
+    margin: 20px;
+    text-align: left;
+}
+
 .line {
     height:6px;
     background-color: black;
-    margin-top: 40px;
+    margin-top: 80px;
+    margin-bottom: 40px;
 }
 
 #three-or {
@@ -252,7 +274,23 @@ header, nav{
 #black {
     margin-top: 40px;
     background-color: black;
+    position: relative;
 }
+
+#black img {
+    width: 100%;
+    height: auto; /* To maintain aspect ratio */
+}
+
+
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 #buy{
     margin-top: 80px;
@@ -309,6 +347,10 @@ header, nav{
 }
 
 /* contact form */
+
+#contact-us-main {
+    margin-top: 80px ;
+}
 
 #contact {
     font-size: 12px;
@@ -406,6 +448,10 @@ header, nav{
         font-size: 140%;
      }
 
+     .image-overlay {
+        background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
+    }
+
 }
 /* TABLET CSS STYLES END */
 
@@ -413,8 +459,19 @@ header, nav{
 /* DESKTOP CSS STYLES START */
 @media screen and (min-width: 1200px) {
     body {
-        font-size: 180%;
+        font-size: 2rem;
      }
+
+     .image-overlay {
+        background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
+    }
+
+    #learn-more {
+        padding: 30px 50px; /* Increase padding to make the button bigger */
+        font-size: 1.5rem; /* Increase font size for better readability
+         */
+         margin-bottom: 100px;
+    }
 
 }
 /* DESKTOP CSS STYLES END */
