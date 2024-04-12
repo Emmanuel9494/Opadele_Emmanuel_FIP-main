@@ -14,3 +14,10 @@
 
 	button.addEventListener("click", hamburgerMenu, false);		
 })();
+
+// This function is for the video to play on page load and loop 
+window.onload = function() {
+	var video = document.getElementById("myVideo");
+	video.play();
+  };
+//   

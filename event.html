@@ -17,55 +17,101 @@
             
         </nav>
     </section>
+
+
+
     <!-- main hero img -->
-    <section id="hero">
-        <h2 class="desk">FAN ClUBS</h2>
-        <h2 class="desk">EVENTS</h2>
+    <section class="grid-con">
+        <h2 class="hidden">hello</h2>
 
-    <div id="hero-con"></div>
-
-        <p>
-            "Unleash the Brew, Ignite the Power:
-             Zima, Where Every Sip Sparks
-             Energy!"</p>
-        
-        <div>
-            <p>LEARN MORE</p>
+        <div id="black" class="col-span-full">
+            <div class="image-overlay"></div>
+            <img         
+                sizes="100vw"
+                srcset="
+                    images/mb-events-1.png 412w,
+                    images/tb-event-big-1.png 768w,
+                    images/dsk-event-big-1.png 1200w"
+                src="images/dsk-event-big-1.png"
+                alt="events"> 
         </div>
 
-    <!-- section break -->
-    <div>
-        <p>
-            Zima's new era invites you to break free, embrace change, and experience excitement like never before!</p>
+    <p class="col-span-full collect-ppp">Introducing Zima Energy Brew, the ultimate companion for your next adventure! Packed with electrifying flavors and an invigorating blend of natural ingredients, Zima Energy Brew is your go-to beverage to fuel your passions and elevate every moment. Whether you're gearing up for an action-packed outdoor event or powering through a late-night study session, Zima Energy Brew provides the boost you need to seize the day. With its crisp taste and revitalizing effect, Zima Energy Brew is not just a drink—it's a lifestyle. Join the movement and embrace the energy with Zima Energy Brew at your side. Unleash the power within and make every event an unforgettable experience with Zima!
+
+
+
+    </p>
+
+    <p class="col-span-full collect-p unleash">"Unleash the Brew, Ignite the Power:
+        Zima, Where Every Sip Sparks
+        Energy!"</p>
+
+    <div id="learn-more" class="col-start-2 col-end-4 l-col-start-2 l-col-end-5">Learn More</div>
+    
+    <div class="col-span-full line"></div>
+</section>
+
+     <!-- video -->
+     <div class="col-span-full video-container">
+        <video id="myVideo" autoplay loop controls>
+            <source src="images/final-video.mp4" type="video/mp4">
+           
+          </video>
     </div>
 
-    </section>
 
-    <!-- video -->
-    <section>
-        <h2 class="hidden">hello again</h2>
-    </section>
+<section class="grid-con">
+        <h2 class="hidden">hello</h2>
 
-    <section>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
+    <div id="black" class="col-span-full">
+        <div class="image-overlay"></div>
+        <img         
+        sizes="100vw"
+        srcset="
+            images/mb-events-2.png 412w,
+            images/tb-event-big-2.png 768w,
+            images/dsk-event-big-2.png 1200w"
+        src="images/dsk-event-big-2.png"
+        alt="events">  
+    </div>
 
-    <!-- animation -->
-    <section></section>
+    <p class="col-span-full collect-p">Experience the exhilaration of embracing change and breaking free at Zima's New Era Event, where excitement awaits like never before!</p>
+
+    <div id="learn-more" class="col-start-2 col-end-4">Learn More</div>
+  
+    <div class="col-span-full line"></div>
+</section>
+
+
+
+
+<!-- contact -->
+<section class="grid-con">
+
+    <h2 class="col-start-1 col-end-3 bold">ZIMA</h2>
     
-    <!-- comic -->
-
-    <section></section>
-
-    <!-- game section -->
-
-    <section></section>
-
-
+    <p class="col-start-3 col-end-5 contact-us">Contact Us</p>
+    
+    <div id="contact-hero-form" class="col-span-full l-col-start-6 l-col-end-12">
+        <form action="email.php" method="POST" enctype="text/plain">
+            <input name="fullName" type="text" placeholder="First & Last Name">
+            <input name="contactInfo" type="text" required placeholder="Phone number or Email">
+            <textarea name="msg" placeholder="Enter your questions, comments or concerns here..."></textarea>
+            <input name="submit" type="submit" value="Send">
+        </form>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </section>
 
 
     <script src="js/main.js"></script>     
