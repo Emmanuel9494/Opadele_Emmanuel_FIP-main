@@ -40,14 +40,13 @@
 body {
     font-family: 'Merriweather-Regular';
     font-size: 16px;
-    
+}
+
+header{
+    position: static;
 }
 
 .no-mobile{
-    display: none;
-}
-
-.desktop{
     display: none;
 }
 
@@ -57,18 +56,21 @@ header, nav{
     
 }
 
-#underlay-btn-txt{
-    display: flex;
-    align-items: center;
+.underlay-btn-txt{
+    
     z-index: 1;
-    /* background-color: aqua; */
+}
+.no-mobile-profile{
+    display: none;
 }
 
 .mobile-tab-id{
     display:none;
 }
 #button img {
-    margin-left: 25px;
+    display: grid;
+    grid-column: 1;
+    margin-left: 16px;
     cursor: pointer;
    
  }
@@ -95,19 +97,21 @@ header, nav{
 
 #burger-con{
     display: none;
-    position: relative;
-    max-height: 60vh;
+    /* position: relative; */
+    max-height: 100%;
     color:#fff;
     background-color: rgb(0, 0, 0);
-    justify-content: center;
     z-index:2;
     bottom:0px;
+    /* filter: blur(5px); 
+  opacity: 0.7;  */
 }
+
 
 /* =============================== */
 #menu-bar{
     height: 50px;
-    background-color: #000000;
+    background-color: #ffffff;
     
 }
 #main-nav ul {
@@ -128,7 +132,7 @@ header, nav{
     color: #F78627;;
  }
  
- #main-nav ul li {
+ #main-nav  ul li {
     border-bottom: 1px solid #efefef;
  }
  
@@ -148,28 +152,27 @@ header, nav{
 }
 
 #main-nav{
-    display: grid;
-    /* height: 4em; */
+    padding-top: 10px; 
+    height: 75px;
     align-items: center;
    
 }
-
 #head-logo{
-    position: relative;
-    left: 65px;
-   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-#head-logo img{
-    margin-left: 40px;
+#head-logo a img{
+    padding-left: 16px;
     cursor: pointer;
 }
 #head-logo h2{
     font-family:Georgia, 'Times New Roman', Times;
     font-weight: lighter;
-    font-size: 0.9em;
+    font-size: 1.125rem;
     color: #F78627;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.09rem;
     width:120px;
     margin-left: 80px;
 }
@@ -189,9 +192,10 @@ header, nav{
 .profile-circle{
     display:none;
 }
-#cart-1{
-    display:none;
+.cart-1{
+    z-index: 1;
 }
+
 /* header section end */
 
 /* images for mobile */
@@ -232,17 +236,6 @@ header, nav{
     color: white;
     justify-content: center;
     text-align: center;
-    margin: auto;
-    margin-top: 20px;
-    align-self: center;
-}
-
-#learn-more-desktop {
-    background-color: #F78627;
-    padding: 15px 20px;
-    color: white;
-    justify-content: center;
-    text-align: center;
     margin-top: 20px;
 }
 /* ----------------------------------------- */
@@ -269,22 +262,19 @@ header, nav{
     
 
 /* Events Mobile */
+
 .hero-container {
     position: relative;
     height: auto; /* Adjust height as needed */
     background-size: cover;
     background-position: center;
     max-width: 100%;
+
+#hero-con {
+    background-image: url(../images/) ;
+
 }
 
-#learn-more-desktop{
-    display: none;
-}
-
-/* Styles for the main image */
-.main-image {
-    display: none;
-}
 /* collections */
 
 .collect-p{
@@ -311,14 +301,11 @@ header, nav{
 
 #three-or {
     margin-top: 40px;
-    position: relative;
-    max-width: 100%;
-   
 }
 
 #black {
     margin-top: 40px;
-
+    background-color: black;
     position: relative;
 }
 
@@ -337,8 +324,9 @@ header, nav{
     height: 100%;
   }
 
-.buy{
+#buy{
     margin-top: 80px;
+
     position: relative;
     left: 33%; /* Adjust the distance from the right as a percentage of the container width */
     justify-content: center;
@@ -347,6 +335,10 @@ header, nav{
 .hh{
     font-size: 2rem;
     padding-bottom: 20px;
+}
+
+
+    padding-left: 30px;
 }
 
 .product-view {
@@ -505,125 +497,237 @@ header, nav{
    border-radius: 0;
 }
 
+/* footer start mobile*/
+#overlap-footer{
+    font-family: 'Roboto';
+    padding-top:15px;
+    margin-top: 20px;
+    background-color: #000;
+}
+
+#txt-logo{
+
+    justify-self: center;
+}
+#overlap-footer .brand-name-footer{
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 30px;
+    font-size: 3.375rem;
+    text-transform: uppercase;
+    letter-spacing: 4px; 
+}
+
+#footer-main-links ul {
+    display: block;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 14px;
+    letter-spacing: 4px; 
+    font-size: 1rem;
+    text-transform: uppercase;
+ }
+ #footer-main-links ul li {
+    border-bottom: unset;
+}
+ 
+ #footer-main-links ul li a {
+    display: flex;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+ }
+ 
+ #footer-main-links ul li a:hover {
+    color: #F78627;
+ }
+ 
+label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    width: 280px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  #overlap-footer .footer-news p{
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+}  
+.footer-news{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.footer-news p{
+    margin-bottom: 50px;
+    margin-left: -20px;
+    letter-spacing: .24rem;
+}
+/* Submit button start */
+form {
+    margin-bottom: 20px; 
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    width: 350px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  button {
+    position: relative; 
+    width:170px;
+    height:60px;
+    padding: 10px 20px;
+    background-color: #F78627;
+    color: #fff; 
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    
+  }
+  
+  button:hover {
+    color:#000;
+    transition: top 0.3s ease; 
+  }
+  .footer-news button{
+    margin-top: 20px;
+  }
+  /* submit button end */
+#zima-social{
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#zima-social a img:hover{
+    filter: brightness(0.5);
+}
+
+#footer-rights p{
+    margin-top: 65px;
+    margin-bottom: 40px;
+    display: flex;
+    color:#fff;
+    font-size: .625rem;
+    text-align: center;
+}
+/* footer end mobile*/
 
 
 /* TABLET CSS STYLES START */
 @media screen and (min-width: 768px) {
-    body {
-        font-size: 1.4rem;
-    }
-
-    .desktop{
+    .no-mobile-profile{
         display: block;
     }
-
-    /* events */
-
-    .event-intro{
-        text-align: center;
-    }
-
-    .fan-club{
-        font-size: 3rem ;
-        color: white;
-        position: relative;
-        top: 25%; /* Center vertically */
-        left: 5%; /* Adjust the distance from the right as a percentage of the container width */
-        transform: translateY(-50%); /* Center vertically */
-        /* Adjust any other styles for tablet as needed */
-
-    }
-
-    .unleash{
+    #popup-footer{
         display: none;
     }
-
-    .unleash-desktop{
-        font-size: 1rem ;
-        color: white;
-        position: relative;
-        top: 20%; /* Center vertically */
-        left: 3%; /* Adjust the distance from the right as a percentage of the container width */
-        transform: translateY(-50%); /* Center vertically */
-        /* Adjust any other styles for tablet as needed */
-
+    #menu-bar{
+        display: none;
     }
-
-    .hero-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    .sub-nav{
+        display: none;
+    }
+    .no-tablet-desktop{
+        display: none;
+    }
+    body {
+        font-size: 140%;
+     }
+#burger-con{
+    grid-row: 1;
+    list-style: none;
+    display: inline;
+    background-color: unset;
+}
+     .image-overlay {
         background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
     }
-
-    .hero-container {
-        position: relative;
-        height: 600px; /* Adjust height as needed */
-        background-size: cover;
-        background-position: center;
-    }
-
-    .main-image {
-        display: block;
-        /* Adjust the position of the main image as needed */
-        top: 50%; /* Center vertically */
-        right: 2%; /* Adjust the distance from the right as a percentage of the container width */
-        transform: translateY(-50%); /* Center vertically */
-        /* Adjust any other styles for tablet as needed */
-        width: 100px;
-        height: 100px;
-        position: absolute; /* Ensure proper positioning */
-    }
-
-    #black img {
-        width: 50%; /* Ensure the image takes up the full width */
-        height: auto; /* Maintain aspect ratio */
-    }
-
-    #learn-more {
+    /* header list nav start */
+    #button {
         display: none;
-    /* Increase font size for better readability */
+     }
+
+     #head-logo{
+        display: unset;
+        /* justify-content: center; */
+        /* flex-wrap: wrap; */
     }
-
-    #learn-more-desktop {
-        display: block;
-        position: absolute;
-        top: 66.8%; /* Adjust vertically as needed */
-        left: 5%; /* Adjust horizontally as needed */
-        transform: translateY(-50%); /* Center vertically */
-        padding: 25px 45px; /* Increase padding to make the button bigger */
-        font-size: 1.2rem; /* Increase font size for better readability */
+    .vertical-line {
+        grid-row: 1;
+        display:block;
+        width: 5px; 
+        height: 60px; 
+        background-color: rgb(255, 255, 255); 
     }
-
-    /* collect */
-
-    .mobile{
-        display: none;
-    }
-
-    #three-or{
-        display: none;
-    }
-
     
-    .unleash-desktop-2{
-        font-size: 1rem ;
-        color: white;
-        position: relative;
-        bottom: 200px;
-        left: 3%; /* Adjust the distance from the right as a percentage of the container width */
-        transform: translateY(-50%); /* Center vertically */
-        /* Adjust any other styles for tablet as needed */
-
+    #head-logo a img{
+        cursor: pointer;
+        
+    }
+   
+    #main-nav{
+        height: 75px;
     }
 
-    .backk{
-    background-color: #000000;
+    #main-nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+     }
+     #main-nav ul li {
+        border-bottom: unset;
+    }
+     
+     #main-nav ul li a {
+        display: inline;
+        padding: 10px 0 10px 0;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+     }
+     
+     #main-nav ul li a:hover {
+        color: #F78627;
+     }
+     
+     
+     
+     #main-nav ul li:first-child {
+        border-top: unset;
+     }
+     
+     #main-nav ul li:last-child {
+        margin-bottom: 10px;
+     }
 
-    
+#user-profile{
+    grid-row: 1;
+    display:flex;
+    font-size: .875rem;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
+
 
 .buy{
     margin-top: 80px;
@@ -639,12 +743,48 @@ header, nav{
     padding-left: 50px;
     
     grid-template-columns: 1fr; /* Change to one column */
+
+#user-profile a {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
 }
 
-.products {
-    justify-content: flex-start; /* Align images to the left */
-    
+#user-profile a:hover {
+    color: #F78627;
+
 }
+
+.profile-circle{
+    display:block;
+}
+     .profile-circle {
+        /* display: unset; */
+        background-color: aliceblue;
+        width: 60px;
+        height: 60px;
+        border-radius:  100%;
+        overflow: hidden;
+        padding-bottom: 10px;
+        /* display: flex; */
+      }
+      
+      .profile-picture {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+      }
+      .cart-1{
+        display:block;
+        /* width: 20px; */
+        /* height: 20px; */
+      }
+     
+/* footer start Tablet*/
+#footer-hero{
+    background-color: #000;
+}
+
 
 .highlight-main {
     display: grid;
@@ -655,12 +795,19 @@ header, nav{
     margin-bottom: 40px;
     position: relative;
         
+
+#overlap-footer{
+    font-family: 'Roboto';
+    padding-top:15px;
+    margin-top: 20px;
+    background-color: #000;
+
 }
 
-.highlight {
-    width: 1%;
-    height: 100px;
-    background-color: #F78627;
+#txt-logo{
+    margin-left: 300px;
+display: flex;
+    /* justify-self: center; */
 }
 
 
@@ -710,71 +857,147 @@ header, nav{
    background-color: #0FE5F8;
 }
 
+
+#txt-logo p{
+    margin-left: 270px;
+
 }
 
 
+#footer-main-links ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin-top: 130px;
+    flex-wrap: wrap;
+ }
+ #footer-main-links ul li {
+    border-bottom: unset;
+}
+ 
+ #footer-main-links ul li a {
+    display: flex;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+ }
+ 
+ #footer-main-links ul li a:hover {
+    color: #F78627;
+ }
+ 
+label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    width: 280px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  #overlap-footer .footer-news p{
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+}  
+.footer-news{
+    grid-row:2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.footer-news p{
+    margin-bottom: 30px;
+    margin-left: 90px;
+}
+/* Submit button start */
+form {
+    margin-bottom: 20px; 
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    width: 350px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  button {
+    position: relative; 
+    width:170px;
+    height:75px;
+    padding: 10px 20px;
+    background-color: #F78627;
+    color: #fff; 
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    
+  }
+  
+  button:hover {
+    color:#000;
+    transition: top 0.3s ease; 
+  }
+  .footer-news button{
+    margin-left: 20px;
+    margin-top: unset;
+  }
+  /* submit button end */
+#zima-social{
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#zima-social a img:hover{
+    filter: brightness(0.5);
+}
+
+#footer-rights p{
+    margin-top: 65px;
+    margin-bottom: 40px;
+    display: flex;
+    color:#fff;
+    font-size: .625rem;
+    text-align: center;
+}
+/* footer end Tablet*/
 
 
 
 
+}
 /* TABLET CSS STYLES END */
+
 
 /* DESKTOP CSS STYLES START */
 @media screen and (min-width: 1200px) {
     body {
         font-size: 2rem;
-    }
+     }
 
-    /* events */
-
-    .unleash{
-        display: none;
-    }
-
-    .unleash-desktop{
-        font-size: 1rem ;
-        color: white;
-        position: relative;
-        top: 30%; /* Center vertically */
-        left: 3%; /* Adjust the distance from the right as a percentage of the container width */
-        transform: translateY(-50%); /* Center vertically */
-        /* Adjust any other styles for tablet as needed */
-
-    }
-
-    .image-overlay {
+     .image-overlay {
         background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
     }
 
-
-
-    .hero-container {
-        width: 100%;
-        height: 800px; /* Adjust height as needed */
-        background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
-        position: relative; /* Ensure proper positioning of child elements */
+    #learn-more {
+        padding: 30px 50px; /* Increase padding to make the button bigger */
+        font-size: 1.5rem; /* Increase font size for better readability
+         */
+         margin-bottom: 100px;
     }
 
-    .main-image {
-        /* Adjust the position of the main image as needed */
-        right: 2%; /* Adjust the distance from the right as a percentage of the container width */
-        /* Adjust any other styles for desktop as needed */
-    }
-
-    #black img {
-        width: 50%; /* Adjust width for desktop */
-        height: auto; /* Maintain aspect ratio */
-    }
-
-    #learn-more-desktop {
-        display: block;
-        position: absolute;
-        top: 74.8%; /* Adjust vertically as needed */
-        left: 5%; /* Adjust horizontally as needed */
-        transform: translateY(-50%); /* Center vertically */
-        padding: 25px 45px; /* Increase padding to make the button bigger */
-        font-size: 1.2rem; /* Increase font size for better readability */
-    }
 
     /* collection */
 
@@ -879,6 +1102,7 @@ header, nav{
 .blu{
    background-color: #0FE5F8;
 }
+
 
 }
 /* DESKTOP CSS STYLES END */
