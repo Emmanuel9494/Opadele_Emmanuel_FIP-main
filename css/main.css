@@ -198,6 +198,21 @@ header, nav{
 
 /* header section end */
 
+/* images for mobile */
+
+.mobile-images {
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+}
+
+.mobile-images img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Ensure the image behaves as a block element */
+}
+
+
 
 
 /* video css ------------------------------------------*/
@@ -247,8 +262,17 @@ header, nav{
     
 
 /* Events Mobile */
+
+.hero-container {
+    position: relative;
+    height: auto; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+
 #hero-con {
     background-image: url(../images/) ;
+
 }
 
 /* collections */
@@ -302,8 +326,21 @@ header, nav{
 
 #buy{
     margin-top: 80px;
+
+    position: relative;
+    left: 33%; /* Adjust the distance from the right as a percentage of the container width */
+    justify-content: center;
+}
+
+.hh{
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+
     padding-left: 30px;
 }
+
 .product-view {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
@@ -330,6 +367,18 @@ header, nav{
     background-color: #F78627;
     flex: 1; /* Flex-grow: each highlight item takes up equal space */
     margin: 0 10px; /* Adjust spacing between highlight items */
+}
+
+.gre {
+    background-color: #07F95C;
+}
+
+.pk{
+    background-color: #FF68E6;
+}
+
+.blu{
+   background-color: #0FE5F8;
 }
 
 .highlight-main {
@@ -678,6 +727,23 @@ form {
     flex-direction: row-reverse;
     justify-content: space-between;
 }
+
+
+.buy{
+    margin-top: 80px;
+    position: relative;
+    left: 270%; /* Adjust the distance from the right as a percentage of the container width */
+
+}
+
+.product-view {
+    justify-items: left; /* Align products to the left */
+    margin-top: -600px; /* Adjust margin as needed */
+    padding: 25px;
+    padding-left: 50px;
+    
+    grid-template-columns: 1fr; /* Change to one column */
+
 #user-profile a {
     text-align: center;
     color: #fff;
@@ -686,6 +752,7 @@ form {
 
 #user-profile a:hover {
     color: #F78627;
+
 }
 
 .profile-circle{
@@ -717,11 +784,24 @@ form {
 #footer-hero{
     background-color: #000;
 }
+
+
+.highlight-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: left; /* Align highlights to the left */
+    margin-top: -520px;
+    margin-bottom: 40px;
+    position: relative;
+        
+
 #overlap-footer{
     font-family: 'Roboto';
     padding-top:15px;
     margin-top: 20px;
     background-color: #000;
+
 }
 
 #txt-logo{
@@ -729,8 +809,58 @@ form {
 display: flex;
     /* justify-self: center; */
 }
+
+
+.bold {
+    margin-bottom: 40px;
+    margin-left: 40px;
+    padding-top: 15px;
+    
+    border-right: solid 4px black;
+  }
+
+
+  #buy-now {
+    background-color: #F78627;
+    padding: 25px 25px;
+    color: white;
+    justify-content: center;
+   
+    text-align: center;
+    margin-top: 80px;
+    }
+
+    .words{
+        margin-top: 480px;
+    }
+
+    #ign{
+        padding-top: 40px;
+    }
+
+    .diss{
+        justify-content: center;
+        position: relative;
+        margin-top: -400px;
+    }
+
+    .gre {
+        background-color: #07F95C;
+    }
+
+    
+.pk{
+    background-color: #FF68E6;
+}
+
+.blu{
+   background-color: #0FE5F8;
+}
+
+
 #txt-logo p{
     margin-left: 270px;
+
 }
 
 
@@ -867,6 +997,112 @@ form {
          */
          margin-bottom: 100px;
     }
+
+
+    /* collection */
+
+        
+    .unleash-desktop-2{
+        font-size: 1rem ;
+        color: white;
+        position: relative;
+        bottom: 300px;
+        left: 3%; /* Adjust the distance from the right as a percentage of the container width */
+        transform: translateY(-50%); /* Center vertically */
+        /* Adjust any other styles for tablet as needed */
+
+    }
+
+    #buy-now {
+        background-color: #F78627;
+        padding: 25px 25px;
+        color: white;
+        justify-content: center;
+       
+        text-align: center;
+        margin-top: 150px;
+        }
+    
+        .words{
+            margin-top: 700px;
+        }
+
+        .buy{
+            margin-top: 80px;
+            margin-bottom: 30px ;
+            position: relative;
+            left: 270%; /* Adjust the distance from the right as a percentage of the container width */
+            top: 20%;
+            bottom: 5%;
+            
+        }
+    
+.product-view {
+    justify-items: left; /* Align products to the left */
+    margin-top: -750px; /* Adjust margin as needed */
+    padding: 25px;
+    padding-left: 50px;
+    
+    grid-template-columns: 1fr; /* Change to one column */
+}
+
+.products {
+    justify-content: flex-start; /* Align images to the left */
+    
+}
+
+.highlight-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: left; /* Align highlights to the left */
+    margin-top: -600px;
+    margin-bottom: 40px;
+    position: relative;
+        
+}
+
+.highlight {
+    width: 1%;
+    height: 100px;
+    background-color: #F78627;
+}
+
+
+.bold {
+    margin-bottom: 40px;
+    margin-left: 40px;
+    padding-top: 15px;
+    
+    border-right: solid 4px black;
+  }
+
+
+
+
+    #ign{
+        padding-top: 40px;
+    }
+
+    .diss{
+        justify-content: center;
+        position: relative;
+        margin-top: -400px;
+    }
+
+    .gre {
+        background-color: #07F95C;
+    }
+
+    
+.pk{
+    background-color: #FF68E6;
+}
+
+.blu{
+   background-color: #0FE5F8;
+}
+
 
 }
 /* DESKTOP CSS STYLES END */
