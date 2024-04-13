@@ -1,24 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="images/zima-browser-icon.ico"  rel="icon" type="image/x-icon"/>
+    <link href="images/zima-browser-icon.ico"  rel="icon" type="image/x-icon">
+    <link href="css/reset.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/reset.css" rel="stylesheet">
     <title>Zima</title>
-</head>
 <body>
-    <!-- header navagation -->
-    <section>
-        <h1 class="hidden">hello</h1>
-        <nav>
-            
-        </nav>
-    </section>
-
-
+    <h1 class="hidden">Welcome to Zima, Feel The Energy</h1>
+    <div id="sticky-head">
+        <header  id="main-header">
+            <nav id="main-nav" class="grid-con" >
+                <h2 class="hidden">Main Navigation</h2>
+                <div id="button"  class="underlay-btn-txt col-span-1">
+               <img src="images/burger-menu-white-icon.svg" alt="zima menu button" class="burger-icon">
+            </div>
+                <!-- Zima Text Logo start -->
+                <div id="head-logo" class=" col-start-2 col-span-2 m-col-start-1 m-col-span-3 l-col-span-2">
+                    <a href="index.html"> <img src="images/zima-mobile-text-logo-white.svg" alt="Zima Logo" ></a>
+                    <h2 class="hidden sub-nav"> Zima Logo</h2>
+                </div>
+                 <!-- Zima Text Logo End -->
+                    <!-- Shop Cart Start -->
+                 <div class="col-end-5 m-col-end-13 l-col-end-13">
+                    <a href="#"><img class="cart-1 " src="images/tb-shop-cart-white-icon.svg" alt="shopping cart icon"></a>
+                </div>
+                 <!-- Shop Cart End -->
+                 
+                 <!-- vertical line start -->
+                 <div class="vertical-line m-col-start-4 no-mobile l-col-start-3"></div>
+                 <!-- vertical line end -->
+                
+                <div id="burger-con"  class="col-span-full m-col-start-5 m-col-span-5 l-col-start-4">
+                    <div id="menu-bar"  class="col-span-full">
+                        <img src="images/menu-header.svg" alt="zima menu Tab">
+                    </div>
+                    <ul class="no-mobzile">
+                        <li class="no-tablet-desktop"><a href="index.html">Home</a></li>
+                        <li><a href="collection.html">Collection</a></li>
+                        <li><a href="event.html">Events</a></li>
+                        <li><a href="#">Arena</a></li>
+                        <li class="no-tablet-desktop"><a href="#">Profile</a></li>
+                        <li class="no-tablet-desktop"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <!-- mini popup footer start -->
+                    <div id="popup-footer">
+                    <img src="images/zima-mobile-text-logo-white.svg" alt="zima logo">
+                    <p>Unleash The Brew, Ignite The Power</p>
+                </div>
+                <!-- mini popup footer end -->
+                </div>
+               
+                <!-- User Profile Start -->
+                <div id="user-profile"  class="m-col-start-10 m-col-span-2">
+                <div class="profile-circle">
+                    <a href="#">
+                    <img src="images/dsk-testimoy-1.png" alt="fan profile picture"  class="profile-picture">
+                </a>
+                </div>
+                <p><a href="#" class="no-mobile-profile">Profile</a></p>
+            </div>
+                 <!-- User Profile End -->
+                
+                 
+            </nav>
+           
+          
+        </header>
+    </div>
 
     <!-- main hero img -->
     <section class="full-width-grid-con">
@@ -149,17 +199,74 @@
         </form>
     </div>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     </section>
+
+     <!-- Footer start -->
+     <footer id="footer-hero">
+        <div id="overlap-footer" class="grid-con">
+            <section id="txt-logo" class="col-span-2 m-col-start-2 m-col-span-4">
+                <h2 class="hidden"> Zima colored Logo</h2>
+                <img src="images/zima-mobile-logo-footer.svg" alt="Zima brand logo"  class="zima-tablet-logo">
+                <p class="brand-name-footer">Zima</p>
+             </section>
+        
+             <section id="footer-main-links" class="col-start-3 col-span-2 m-col-start-6 m-col-span-6">
+                <h2 class="hidden"> Zima Useful Links</h2>
+                <ul class="footer-links">
+                    <li class="no-tablet-desktop"><a href="index.html">Home</a></li>
+                    <li><a href="collection.html">Collection</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="#">Arena</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html">Faqs</a></li>
+                    <li><a href="contact.html">About</a></li>
+                    <li><a href="contact.html">Carrers</a></li>
+                    <li><a href="contact.html">Terms Of Use</a></li>
+                    <li><a href="contact.html">Privacy Policy</a></li>
+                </ul>
+             </section>
+        <!-- News And Sunit button -->
+             <div class=" footer-news col-start-1 col-span-1 m-col-start-1 m-col-span-2">
+                <p>News</p>
+            </div>
+            <div class=" footer-news col-start-2 col-span-3 m-col-start-2 m-col-span-10">
+                <!-- Email and phone Number start -->
+                <label for="contact">Email or Phone:</label>
+                <input type="text" id="contact" name="contact" placeholder="Enter your email or phone number">
+                <button type="submit">Submit</button>
+             </div>
+        
+             <section id="zima-social" class="col-span-full m-col-start-2 m-col-span-9">
+                <h2 class="hidden"> Zima Social Links</h2>
+                <!-- linkden social -->
+                <a href="#">
+                    <img src="images/mb-linkedin-icon.svg" alt="Zima linkden Page"  class="social-change">
+                </a>
+                <!-- Twitter social page-->
+                <a href="#">
+                    <img src="images/mb-twitter-icon.svg" alt="Zima twitter page"  class="social-change">
+                </a>
+                <!-- google page social -->
+                <a href="#">
+                    <img src="images/mb-google-icon.svg" alt="Zima google fan page"  class="social-change">
+                </a>
+                <!-- zima facebook social page-->
+                <a href="#">
+                    <img src="images/mb-facebook-icon.svg" alt="Zima facebook page"  class="social-change">
+                </a>
+                <!-- insta social -->
+                <a href="#">
+                    <img src="images/mb-instagram-icon.svg" alt="zima Instagram page"  class="social-change">
+                </a>
+             </section>
+             <div id="footer-rights" class="col-span-full">
+                <p>All prices and services on this website and in our reservation system are based on conditions at the time of publishing and are subject to change. Please contact us to confirm services, availability and pricing.
+                    ©2024 Zima Beer Energy Drink Inc. All Rights Reserved. Privacy policy </p>
+             </div>
+        
+        </div>
+        </footer>
+            <!-- Footer End-->
 
 
     <script src="js/main.js"></script>     
