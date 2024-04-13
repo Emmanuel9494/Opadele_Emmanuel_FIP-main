@@ -46,6 +46,10 @@ header{
     position: static;
 }
 
+.desktop{
+    display: none;
+}
+
 .no-mobile{
     display: none;
 }
@@ -238,6 +242,15 @@ header, nav{
     text-align: center;
     margin-top: 20px;
 }
+
+#learn-more-desktop {
+    background-color: #F78627;
+    padding: 15px 20px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
 /* ----------------------------------------- */
 #buy-now {
         background-color: #F78627;
@@ -268,12 +281,17 @@ header, nav{
     height: auto; /* Adjust height as needed */
     background-size: cover;
     background-position: center;
-    max-width: 100%;
+    max-width: 100%; /* Ensure the container doesn't exceed the full width */
+    width: 100%; /* Ensure the container takes up the full width */
+}
 
 #hero-con {
     background-image: url(../images/) ;
 
 }
+
+
+
 
 /* collections */
 
@@ -303,13 +321,13 @@ header, nav{
     margin-top: 40px;
 }
 
-#black {
+.black {
     margin-top: 40px;
-    background-color: black;
+    
     position: relative;
 }
 
-#black img {
+.black img {
     width: 100%;
     height: auto; /* To maintain aspect ratio */
 }
@@ -324,7 +342,7 @@ header, nav{
     height: 100%;
   }
 
-#buy{
+.buy{
     margin-top: 80px;
 
     position: relative;
@@ -333,11 +351,8 @@ header, nav{
 }
 
 .hh{
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-bottom: 20px;
-}
-
-
     padding-left: 30px;
 }
 
@@ -632,6 +647,15 @@ form {
 
 /* TABLET CSS STYLES START */
 @media screen and (min-width: 768px) {
+
+
+    .desktop{
+        display: block;
+    } 
+
+    .mobile{
+        display: none;
+    }  
     .no-mobile-profile{
         display: block;
     }
@@ -742,7 +766,7 @@ form {
     padding: 25px;
     padding-left: 50px;
     
-    grid-template-columns: 1fr; /* Change to one column */
+    grid-template-columns: 1fr; /* Change to one column */}
 
 #user-profile a {
     text-align: center;
@@ -793,7 +817,7 @@ form {
     justify-items: left; /* Align highlights to the left */
     margin-top: -520px;
     margin-bottom: 40px;
-    position: relative;
+    position: relative;}
         
 
 #overlap-footer{
@@ -977,8 +1001,153 @@ form {
 
 
 
+
+/* amari code */   
+
+    /* events */
+
+     
+    .event-intro{
+        text-align: center;
+    }
+
+    .fan-club{
+        font-size: 3rem ;
+        color: white;
+        position: relative;
+        top: 25%; /* Center vertically */
+        left: 5%; /* Adjust the distance from the right as a percentage of the container width */
+        transform: translateY(-50%); /* Center vertically */
+        /* Adjust any other styles for tablet as needed */
+
+    }
+
+    .unleash{
+        display: none;
+    }
+
+    .unleash-desktop{
+        font-size: 1rem ;
+        color: white;
+        position: relative;
+        top: 20%; /* Center vertically */
+        left: 3%; /* Adjust the distance from the right as a percentage of the container width */
+        transform: translateY(-50%); /* Center vertically */
+        /* Adjust any other styles for tablet as needed */
+
+    }
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+      
+    }
+
+    .hero-container {
+        position: relative;
+        height: 600px; /* Adjust height as needed */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .main-image {
+        display: block;
+        /* Adjust the position of the main image as needed */
+        top: 50%; /* Center vertically */
+        right: 2%; /* Adjust the distance from the right as a percentage of the container width */
+        transform: translateY(-50%); /* Center vertically */
+        /* Adjust any other styles for tablet as needed */
+        width: 100px;
+        height: 100px;
+        position: absolute; /* Ensure proper positioning */
+       /* Black color with 70% opacity */
+    }
+
+    .black img {
+        width: 50%; /* Ensure the image takes up the full width */
+        height: auto; /* Maintain aspect ratio */
+       
+    }
+
+    #learn-more {
+        display: none;
+    /* Increase font size for better readability */
+    }
+
+    #learn-more-desktop {
+        display: block;
+        position: absolute;
+        top: 66.8%; /* Adjust vertically as needed */
+        left: 5%; /* Adjust horizontally as needed */
+        transform: translateY(-50%); /* Center vertically */
+        padding: 25px 45px; /* Increase padding to make the button bigger */
+        font-size: 1.2rem; /* Increase font size for better readability */
+    }
+
+    /* collect */
+
+
+
+    #three-or{
+        display: none;
+    }
+
+
+    .unleash-desktop-2{
+        font-size: 1rem ;
+        color: white;
+        position: relative;
+        bottom: 200px;
+        left: 3%; /* Adjust the distance from the right as a percentage of the container width */
+        transform: translateY(-50%); /* Center vertically */
+        /* Adjust any other styles for tablet as needed */
+
+    }
+
+
+
+.buy{
+    margin-top: 80px;
+    position: relative;
+    left: 250%; /* Adjust the distance from the right as a percentage of the container width */
+
+}
+
+.product-view {
+    justify-items: left; /* Align products to the left */
+    margin-top: 40px; /* Adjust margin as needed */
+    padding: 20px;
+    grid-template-columns: 1fr; /* Change to one column */
+}
+
+.products {
+    justify-content: flex-start; /* Align images to the left */
+
+}
+
+.highlight-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: left; /* Align highlights to the left */
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
 }
 /* TABLET CSS STYLES END */
+
 
 
 /* DESKTOP CSS STYLES START */
@@ -1062,11 +1231,7 @@ form {
         
 }
 
-.highlight {
-    width: 1%;
-    height: 100px;
-    background-color: #F78627;
-}
+
 
 
 .bold {
@@ -1105,4 +1270,7 @@ form {
 
 
 }
+
+
+
 /* DESKTOP CSS STYLES END */
