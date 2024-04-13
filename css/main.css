@@ -47,6 +47,10 @@ body {
     display: none;
 }
 
+.desktop{
+    display: none;
+}
+
 /* header section start */
 header, nav{
     background-color: black;
@@ -213,6 +217,17 @@ header, nav{
     color: white;
     justify-content: center;
     text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    align-self: center;
+}
+
+#learn-more-desktop {
+    background-color: #F78627;
+    padding: 15px 20px;
+    color: white;
+    justify-content: center;
+    text-align: center;
     margin-top: 20px;
 }
 /* ----------------------------------------- */
@@ -239,10 +254,22 @@ header, nav{
     
 
 /* Events Mobile */
-#hero-con {
-    background-image: url(../images/) ;
+.hero-container {
+    position: relative;
+    height: 300px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
 }
 
+#learn-more-desktop{
+    display: none;
+}
+
+/* Styles for the main image */
+.main-image {
+    display: none;
+}
 /* collections */
 
 .collect-p{
@@ -269,11 +296,14 @@ header, nav{
 
 #three-or {
     margin-top: 40px;
+    position: relative;
+    max-width: 100%;
+   
 }
 
 #black {
     margin-top: 40px;
-    background-color: black;
+
     position: relative;
 }
 
@@ -292,10 +322,14 @@ header, nav{
     height: 100%;
   }
 
-#buy{
+.buy{
     margin-top: 80px;
-    padding-left: 30px;
+    position: relative;
+    left: 33%; /* Adjust the distance from the right as a percentage of the container width */
+
 }
+
+
 .product-view {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
@@ -445,33 +479,233 @@ header, nav{
 /* TABLET CSS STYLES START */
 @media screen and (min-width: 768px) {
     body {
-        font-size: 140%;
-     }
+        font-size: 1.4rem;
+    }
 
-     .image-overlay {
+    .desktop{
+        display: block;
+    }
+
+    /* events */
+
+    .event-intro{
+        text-align: center;
+    }
+
+    .fan-club{
+        font-size: 3rem ;
+        color: white;
+        position: relative;
+        top: 25%; /* Center vertically */
+        left: 5%; /* Adjust the distance from the right as a percentage of the container width */
+        transform: translateY(-50%); /* Center vertically */
+        /* Adjust any other styles for tablet as needed */
+
+    }
+
+    .unleash{
+        display: none;
+    }
+
+    .unleash-desktop{
+        font-size: 1rem ;
+        color: white;
+        position: relative;
+        top: 20%; /* Center vertically */
+        left: 3%; /* Adjust the distance from the right as a percentage of the container width */
+        transform: translateY(-50%); /* Center vertically */
+        /* Adjust any other styles for tablet as needed */
+
+    }
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
     }
 
-}
-/* TABLET CSS STYLES END */
+    .hero-container {
+        position: relative;
+        height: 600px; /* Adjust height as needed */
+        background-size: cover;
+        background-position: center;
+    }
 
+    .main-image {
+        display: block;
+        /* Adjust the position of the main image as needed */
+        top: 50%; /* Center vertically */
+        right: 2%; /* Adjust the distance from the right as a percentage of the container width */
+        transform: translateY(-50%); /* Center vertically */
+        /* Adjust any other styles for tablet as needed */
+        width: 100px;
+        height: 100px;
+        position: absolute; /* Ensure proper positioning */
+    }
+
+    #black img {
+        width: 50%; /* Ensure the image takes up the full width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    #learn-more {
+        display: none;
+    /* Increase font size for better readability */
+    }
+
+    #learn-more-desktop {
+        display: block;
+        position: absolute;
+        top: 66.8%; /* Adjust vertically as needed */
+        left: 5%; /* Adjust horizontally as needed */
+        transform: translateY(-50%); /* Center vertically */
+        padding: 25px 45px; /* Increase padding to make the button bigger */
+        font-size: 1.2rem; /* Increase font size for better readability */
+    }
+
+    /* collect */
+
+    .mobile{
+        display: none;
+    }
+
+    #three-or{
+        display: none;
+    }
+
+    
+    .unleash-desktop-2{
+        font-size: 1rem ;
+        color: white;
+        position: relative;
+        bottom: 200px;
+        left: 3%; /* Adjust the distance from the right as a percentage of the container width */
+        transform: translateY(-50%); /* Center vertically */
+        /* Adjust any other styles for tablet as needed */
+
+    }
+
+    .backk{
+    background-color: #000000;
+
+    
+}
+
+.buy{
+    margin-top: 80px;
+    position: relative;
+    left: 250%; /* Adjust the distance from the right as a percentage of the container width */
+
+}
+
+.product-view {
+    justify-items: left; /* Align products to the left */
+    margin-top: 40px; /* Adjust margin as needed */
+    padding: 20px;
+    grid-template-columns: 1fr; /* Change to one column */
+}
+
+.products {
+    justify-content: flex-start; /* Align images to the left */
+    
+}
+
+.highlight-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: left; /* Align highlights to the left */
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.highlight {
+    width: 1%;
+    height: 100px;
+    background-color: #F78627;
+}
+
+}
+
+
+
+
+
+
+/* TABLET CSS STYLES END */
 
 /* DESKTOP CSS STYLES START */
 @media screen and (min-width: 1200px) {
     body {
         font-size: 2rem;
-     }
+    }
 
-     .image-overlay {
+    /* events */
+
+    .unleash{
+        display: none;
+    }
+
+    .unleash-desktop{
+        font-size: 1rem ;
+        color: white;
+        position: relative;
+        top: 30%; /* Center vertically */
+        left: 3%; /* Adjust the distance from the right as a percentage of the container width */
+        transform: translateY(-50%); /* Center vertically */
+        /* Adjust any other styles for tablet as needed */
+
+    }
+
+    .image-overlay {
         background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
     }
 
-    #learn-more {
-        padding: 30px 50px; /* Increase padding to make the button bigger */
-        font-size: 1.5rem; /* Increase font size for better readability
-         */
-         margin-bottom: 100px;
+
+
+    .hero-container {
+        width: 100%;
+        height: 800px; /* Adjust height as needed */
+        background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
+        position: relative; /* Ensure proper positioning of child elements */
     }
 
+    .main-image {
+        /* Adjust the position of the main image as needed */
+        right: 2%; /* Adjust the distance from the right as a percentage of the container width */
+        /* Adjust any other styles for desktop as needed */
+    }
+
+    #black img {
+        width: 50%; /* Adjust width for desktop */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    #learn-more-desktop {
+        display: block;
+        position: absolute;
+        top: 74.8%; /* Adjust vertically as needed */
+        left: 5%; /* Adjust horizontally as needed */
+        transform: translateY(-50%); /* Center vertically */
+        padding: 25px 45px; /* Increase padding to make the button bigger */
+        font-size: 1.2rem; /* Increase font size for better readability */
+    }
+
+    /* collection */
+
+        
+    .unleash-desktop-2{
+        font-size: 1rem ;
+        color: white;
+        position: relative;
+        bottom: 300px;
+        left: 3%; /* Adjust the distance from the right as a percentage of the container width */
+        transform: translateY(-50%); /* Center vertically */
+        /* Adjust any other styles for tablet as needed */
+
+    }
 }
 /* DESKTOP CSS STYLES END */
