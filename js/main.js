@@ -23,17 +23,20 @@ function hamburgerMenu() {
     console.log("Menu Triggered");
 }
 
-// Adding event listeners
-button.addEventListener("click", hamburgerMenu, false);
-dropDown1.addEventListener("click", aboutMenu, false);
+// Check if button exists before adding event listener
+if (button) {
+    button.addEventListener("click", hamburgerMenu, false);
+} else {
+    console.error("#button element not found.");
+}
 
 // Check if dropDown1 exists before adding event listener
-if (dropDown1) {
+if (document.getElementById("about-legal")) {
     dropDown1.addEventListener("click", aboutMenu, false);
 } else {
     // Only log an error if the current page is contact.html
     if (window.location.pathname.includes("contact.html")) {
-        console.error("Dropdown element not found.");
+        console.error("#about-legal element not found.");
     }
 }
 
