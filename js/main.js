@@ -3,7 +3,8 @@ console.log("Js Connected");
 // Selecting elements
 let button = document.querySelector("#button img");
 let burgerShow = document.querySelector("#burger-con");
-let dropDown1 = document.querySelector(".head-black");
+let dropDown1 = document.querySelector("#pop-legal #about-legal");
+
 
 // Function to toggle about menu dropdown
 function aboutMenu() {
@@ -24,6 +25,7 @@ function hamburgerMenu() {
 
 // Adding event listeners
 button.addEventListener("click", hamburgerMenu, false);
+dropDown1.addEventListener("click", aboutMenu, false);
 
 // Check if dropDown1 exists before adding event listener
 if (dropDown1) {
