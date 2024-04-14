@@ -25,6 +25,7 @@ console.log("Js Connected");
 window.onload = function() {
     var video = document.getElementById("myVideo");
     if (video) {
+        video.muted = true; // Mute the video
         video.play();
         video.addEventListener('ended', function() {
             this.currentTime = 0;
