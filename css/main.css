@@ -201,6 +201,47 @@ header, nav{
 }
 
 /* header section end */
+/* index-page */
+#in-hero{
+    padding:0;
+    margin-top:10px;
+    /* background-color: #000; */
+    margin-bottom: 10px;
+}
+
+#in-hero {
+    background-image: url('../images/mb-product1-412.png');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* width: 800px; */
+    height: 320px;
+    left: 550px;
+    background-color: rgba(255, 255, 255, 0);
+    animation: imageLoop 9s ease infinite; 
+  }
+
+  @keyframes imageLoop {
+    0% { 
+        background-image: url('../images/mb-product1-412.png');
+        background-size: contain; 
+     }
+    45% { 
+        background-image: url('../images/mb-product2-412.png');
+        background-size: contain; 
+     }
+
+
+    75% { 
+        background-image: url('../images/mb-product3-412.png');
+        background-size: contain; 
+     }
+
+    100% {
+         background-image: url('../images/mb-product4-412.png');
+         background-size: contain; 
+         }
+  }
+ 
 
 /* images for mobile */
 
@@ -622,9 +663,7 @@ header, nav{
 .head-black:hover .vertical-line-contact {
     background-color:#F78627;
 }
-.smalldrop{
-    /* display:none; */
-}
+
 
 .second-info{
     display:none;
