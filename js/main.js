@@ -94,3 +94,24 @@ window.onload = function() {
         updateContent();
     }
 };
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get references to the buttons and the lightbox
+    var learnMoreDivs = document.querySelectorAll(".learn-more, .learn-more-desktop");
+    var lightbox = document.querySelector(".lightbox");
+
+    // Add click event listener to the buttons
+    learnMoreDivs.forEach(function(div) {
+        div.addEventListener("click", function() {
+            // Display the lightbox
+            lightbox.style.display = "flex";
+        });
+    });
+
+    // Add click event listener to close the lightbox when clicked outside
+    lightbox.addEventListener("click", function(event) {
+        if (event.target === lightbox) {
+            lightbox.style.display = "none";
+        }
+    });
+});
