@@ -234,32 +234,50 @@ header, nav{
   }
 
 /* learn more button ----------------------------------*/
-#learn-more {
+.learn-more {
     background-color: #F78627;
     padding: 15px 20px;
     color: white;
     justify-content: center;
     text-align: center;
     margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+
 }
 
-#learn-more-desktop {
+.learn-more-desktop {
     background-color: #F78627;
     padding: 15px 20px;
     color: white;
     justify-content: center;
     text-align: center;
     margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+
 }
+
+.learn-more:hover,
+.learn-more-desktop:hover {
+    background-color: black;
+    color: #F78627;
+}
+
+
 /* ----------------------------------------- */
-#buy-now {
-        background-color: #F78627;
-        padding: 25px 25px;
-        color: white;
-        justify-content: center;
-        text-align: center;
-        margin-top: 20px;
-        }
+.buy-now {
+    background-color: #F78627;
+    padding: 25px 25px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+}
+
+.buy-now:hover {
+    background-color: black;
+    color: #F78627;
+}
 
 /* home */
 
@@ -351,7 +369,7 @@ header, nav{
 }
 
 .hh{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     padding-bottom: 20px;
     padding-left: 30px;
 }
@@ -762,7 +780,7 @@ form {
 
 .product-view {
     justify-items: left; /* Align products to the left */
-    margin-top: -600px; /* Adjust margin as needed */
+    margin-top: -500px; /* Adjust margin as needed */
     padding: 25px;
     padding-left: 50px;
     
@@ -818,6 +836,14 @@ form {
     margin-top: -520px;
     margin-bottom: 40px;
     position: relative;}
+
+    .highlight {
+        width: 1%;
+        height: 100px;
+        background-color: #F78627;
+        
+    }
+    
         
 
 #overlap-footer{
@@ -844,7 +870,7 @@ display: flex;
   }
 
 
-  #buy-now {
+  .buy-now {
     background-color: #F78627;
     padding: 25px 25px;
     color: white;
@@ -1073,12 +1099,12 @@ form {
        
     }
 
-    #learn-more {
+    .learn-more {
         display: none;
     /* Increase font size for better readability */
     }
 
-    #learn-more-desktop {
+    .learn-more-desktop {
         display: block;
         position: absolute;
         top: 66.8%; /* Adjust vertically as needed */
@@ -1090,6 +1116,11 @@ form {
 
     /* collect */
 
+    #loopy {
+        position: relative;
+        background-color: #000; /* Black background color */
+        overflow: hidden; /* Hide overflowing content */
+    }
 
 
     #three-or{
@@ -1109,7 +1140,6 @@ form {
     }
 
 
-
 .buy{
     margin-top: 80px;
     position: relative;
@@ -1117,26 +1147,12 @@ form {
 
 }
 
-.product-view {
-    justify-items: left; /* Align products to the left */
-    margin-top: 40px; /* Adjust margin as needed */
-    padding: 20px;
-    grid-template-columns: 1fr; /* Change to one column */
-}
 
 .products {
     justify-content: flex-start; /* Align images to the left */
 
 }
 
-.highlight-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    justify-items: left; /* Align highlights to the left */
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
 
 
 
@@ -1160,7 +1176,7 @@ form {
         background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
     }
 
-    #learn-more {
+    .learn-more {
         padding: 30px 50px; /* Increase padding to make the button bigger */
         font-size: 1.5rem; /* Increase font size for better readability
          */
@@ -1175,14 +1191,14 @@ form {
         font-size: 1rem ;
         color: white;
         position: relative;
-        bottom: 300px;
+        bottom: 350px;
         left: 3%; /* Adjust the distance from the right as a percentage of the container width */
         transform: translateY(-50%); /* Center vertically */
         /* Adjust any other styles for tablet as needed */
 
     }
 
-    #buy-now {
+    .buy-now {
         background-color: #F78627;
         padding: 25px 25px;
         color: white;
@@ -1231,6 +1247,13 @@ form {
         
 }
 
+.highlight {
+    width: 1%;
+    height: 100px;
+    background-color: #F78627;
+    
+}
+
 
 
 
@@ -1243,6 +1266,15 @@ form {
   }
 
 
+  .learn-more-desktop {
+    display: block;
+    position: absolute;
+    top: 80%; /* Adjust vertically as needed */
+    left: 5%; /* Adjust horizontally as needed */
+    transform: translateY(-50%); /* Center vertically */
+    padding: 25px 45px; /* Increase padding to make the button bigger */
+    font-size: 1.2rem; /* Increase font size for better readability */
+}
 
 
     #ign{
