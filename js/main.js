@@ -1,18 +1,25 @@
-(function() {
-    console.log("Js Connected");
+console.log("Js Connected");
 
     let button = document.querySelector("#button img");
     let burgerShow = document.querySelector("#burger-con");
+	let dropDown1 =document.querySelector(".head-black");
+    
+	
 
-
+	function aboutMenu() {
+        dropDown1.classList.toggle("smalldrop");
+		console.log("About Menu dropped");
+    };
 
     function hamburgerMenu() {
         burgerShow.classList.toggle("opaque-toggle");
         button.classList.toggle("burger");
+		console.log("Menu Triggered");
     };
 
 	button.addEventListener("click", hamburgerMenu, false);
-});
+	dropDown1.addEventListener("click", aboutMenu, false);
+
 
 // This function is for the video to play on page load and loop 
 window.onload = function() {
@@ -34,23 +41,7 @@ window.onload = function() {
 
 	
 // -----------------------menu drop down-------------------------------------
-(function() {
-    // Ensure the variables button and burgerShow are declared within the scope of the self-invoking function
-    let button = document.querySelector("#button img");
-    let burgerShow = document.querySelector("#burger-con");
 
-    function hamburgerMenu() {
-        burgerShow.classList.toggle("opaque-toggle");
-        button.classList.toggle("burger");
-    };
-    
-    // Check if button and burgerShow elements are found before adding the event listener
-    if (button && burgerShow) {
-        button.addEventListener("click", hamburgerMenu, false);
-    } else {
-        console.error("Button or burgerShow element not found.");
-    }
-})();
 
 // This function is for the video to play on page load and loop 
 window.onload = function() {
