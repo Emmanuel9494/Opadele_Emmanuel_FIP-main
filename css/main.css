@@ -529,6 +529,86 @@ header, nav{
    color: #F78627;
    border-radius: 0;
 }
+/* contact and legal page css start */
+#h-fan {
+    margin: 10px 0;
+    position: relative;
+    font-family: 'Roboto';
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-image: url('../images/mb-events-1.png');
+    background-color: rgba(0, 0, 0, 0.7); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+#fan-speak {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #fff;
+    height: 320px; 
+    z-index: 1;
+    flex-direction: column;
+}
+
+#fan-speak .small-speak {
+    font-size: 1.875rem;
+}
+
+#fan-speak .big-speak {
+    font-size: 4.75rem;
+}
+
+#fan-speak-cover {
+    position: absolute;
+    top: 245px;
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+    background-color: rgba(0, 0, 0, 0.461);
+    width: 100%;
+    height: 320px; 
+    z-index: 1;
+}
+/* Legal section start */
+
+.vertical-line-contact {
+    /* grid-row: 1; */
+    /* display:block; */
+    width: 3px; 
+    height: 25px; 
+    background-color: rgb(255, 255, 255); 
+}
+.head-black{
+    font-size: 1.125rem;
+    font-weight: lighter;
+    display: flex;
+    padding-left: 10px;
+    background-color: #000;
+    height: 50px;
+    color: #fff;
+    align-items: center;
+    cursor: pointer;
+}
+.head-black .vertical-line-contact {
+    margin-right: 15px;
+}
+.info-legal{
+    margin-top: 10px;
+    line-height: 2rem;
+}
+.info-legal .info-link{
+    color: #F78627;
+    cursor: pointer;
+    font-style: italic;
+}
+
+
+/* contact and legal page css end */
+
+
 
 /* footer start mobile*/
 #overlap-footer{
@@ -689,9 +769,7 @@ form {
     .no-tablet-desktop{
         display: none;
     }
-    body {
-        font-size: 140%;
-     }
+  
 #burger-con{
     grid-row: 1;
     list-style: none;
@@ -822,6 +900,25 @@ form {
         /* height: 20px; */
       }
      
+/* contact and legal tablet start */
+#h-fan {
+    background-image: url('../images/tb-event-big-1.png');
+}
+
+#fan-speak {
+    height: 420px; 
+}
+
+
+#fan-speak-cover {
+    top: 295px;
+    height: 420px; 
+    
+}
+/* contact and legal tablet end */
+
+
+
 /* footer start Tablet*/
 #footer-hero{
     background-color: #000;
@@ -1168,10 +1265,7 @@ form {
 
 /* DESKTOP CSS STYLES START */
 @media screen and (min-width: 1200px) {
-    body {
-        font-size: 2rem;
-     }
-
+   
      .image-overlay {
         background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
     }
@@ -1229,6 +1323,24 @@ form {
     padding-left: 50px;
     
     grid-template-columns: 1fr; /* Change to one column */
+/* contact and legal desktop start */
+#h-fan {
+    background-image: url('../images/dsk-event-big-1.png');
+    overflow: hidden;
+}
+#fan-speak {
+    height: 520px; 
+}
+
+
+#fan-speak-cover {
+    top: 345px;
+    left: 45%;
+    height: 520px; 
+    
+}
+/* contact and legal desktop end */
+
 }
 
 .products {
