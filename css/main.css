@@ -211,14 +211,14 @@ header, nav{
 
 #in-hero {
     background-image: url('../images/mb-product1-412.png');
-    /* background-repeat: no-repeat; */
     background-size: cover;
-    /* width: 800px; */
-    height: 320px;
+    max-width: 100%;
+    max-height: 100%;
+    height: 200px;
     left: 550px;
     background-color: rgba(255, 255, 255, 0);
     animation: imageLoop 9s ease infinite; 
-  }
+}
 
   @keyframes imageLoop {
     0% { 
@@ -266,6 +266,11 @@ header, nav{
 .background-image {
     position: relative;
     
+}
+
+.svg-container{
+    margin-left: 100px;
+   
 }
 
 
@@ -492,7 +497,7 @@ width: 50px; }
     grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
     gap: 20px; /* Adjust the gap between grid items */
     justify-items: center; /* Center grid items horizontally */
-    margin-top: 4 0px;
+    margin-top: 40px;
     padding: 20px;
 }
 
@@ -682,7 +687,7 @@ width: 50px; }
     transform: translate(-50%, -50%); /* Center both horizontally and vertically */
     background-color: rgba(0, 0, 0, 0.461);
     width: 100%;
-    height: 320px; 
+    height: 20%; /* Set height to cover the image */
     z-index: 1;
 }
 /* Legal section start */
@@ -985,6 +990,19 @@ form {
 }
 
 
+#in-hero{
+    height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
 .buy{
     margin-top: 80px;
     position: relative;
@@ -1114,7 +1132,7 @@ display: flex;
     }
 
     .words{
-        margin-top: 480px;
+        margin-top: 500px;
     }
 
     #ign{
@@ -1125,6 +1143,7 @@ display: flex;
         justify-content: center;
         position: relative;
         margin-top: -400px;
+        padding-left: 70px;
     }
 
     .gre {
@@ -1308,7 +1327,7 @@ form {
 
     .hero-container {
         position: relative;
-        height: 600px; /* Adjust height as needed */
+        height: 850px; /* Adjust height as needed */
         background-size: cover;
         background-position: center;
     }
@@ -1399,17 +1418,17 @@ form {
 }
 
 /* Adjust the position of each SVG element for tablet */
-#svg-element-1 { bottom: 850px; left: 350px; }
-#svg-element-2 { bottom: 600px; left: 760px;  width: 100px;}
-#svg-element-3 { bottom: 440px; left: 300px; width: 100px;}
+#svg-element-1 { bottom: 1100px; left: 350px; }
+#svg-element-2 { bottom: 800px; left: 900px;  width: 100px;}
+#svg-element-3 { bottom: 550px; left: 300px; width: 100px;}
 #svg-element-4 { bottom: 400px; left: 400px; width: 100px;}
-#svg-element-5 { bottom: 400px; left: 650px; width: 100px;}
-#svg-element-6 { top: -140px; left: 650px; width: 100px;}
+#svg-element-5 { bottom: 400px; left: 700px; width: 100px;}
+#svg-element-6 { top: -140px; left: 750px; width: 100px;}
 
 
-#svg-element-7 { bottom: 800px; left: 300px; width:100px}
+#svg-element-7 { bottom: 1000px; left: 300px; width:100px}
 #svg-element-8 { bottom: 300px; left: 150px; }
-#svg-element-9 { bottom: 350px; left: 700px;  }
+#svg-element-9 { bottom: 450px; left: 768px;  }
 
 
 
@@ -1446,6 +1465,27 @@ form {
     }
 
 
+    .main-image {
+        display: block;
+        /* Adjust the position of the main image as needed */
+        top: 50%; /* Center vertically */
+        right: 2%; /* Adjust the distance from the right as a percentage of the container width */
+        transform: translateY(-50%); /* Center vertically */
+        /* Adjust any other styles for tablet as needed */
+        width: auto; /* Allow the width to adjust automatically based on the height */
+        max-height: 700px; /* Set the maximum height for the image */
+        position: absolute; /* Ensure proper positioning */
+        /* Black color with 70% opacity */
+    }
+
+
+
+
+
+
+
+
+
     /* collection */
 
         
@@ -1467,11 +1507,11 @@ form {
         justify-content: center;
        
         text-align: center;
-        margin-top: 150px;
+        margin-top: 200px;
         }
     
         .words{
-            margin-top: 700px;
+            margin-top: 1000px;
         }
 
         .buy{
@@ -1492,6 +1532,7 @@ form {
     
     grid-template-columns: 1fr; /* Change to one column */
 /* contact and legal desktop start */
+}
 #h-fan {
     background-image: url('../images/dsk-event-big-1.png');
     overflow: hidden;
@@ -1509,7 +1550,7 @@ form {
 }
 /* contact and legal desktop end */
 
-}
+
 
 .products {
     justify-content: flex-start; /* Align images to the left */
@@ -1565,6 +1606,7 @@ form {
         justify-content: center;
         position: relative;
         margin-top: -400px;
+        padding-left: 20px;
     }
 
     .gre {
