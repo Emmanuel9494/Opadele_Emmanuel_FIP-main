@@ -604,6 +604,31 @@ header, nav{
     cursor: pointer;
     font-style: italic;
 }
+#terms-legal{
+    color: #F78627;
+}
+#terms-legal .info-link{
+    color: #000;
+}
+#policy-legal{
+    color: #d25e00;
+}
+#policy-legal .info-link{
+    color: #000;
+}
+.head-black:hover {
+    color: #F78627;
+}
+.head-black:hover .vertical-line-contact {
+    background-color:#F78627;
+}
+.smalldrop{
+    /* display:none; */
+}
+
+.second-info{
+    display:none;
+}
 
 
 /* contact and legal page css end */
