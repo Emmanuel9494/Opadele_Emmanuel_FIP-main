@@ -260,6 +260,78 @@ header, nav{
 
 
 
+/* comic */
+
+/* panel-1 */
+.background-image {
+    position: relative;
+    
+}
+
+
+.svg-element {
+    position: relative; /* Change to relative */
+    z-index: 2; /* Ensure SVG elements appear above the background image */
+    margin-top: -100px; /* Adjust the top margin as needed */
+    margin-left: -100px; /* Adjust the left margin as needed */
+    width: 100px;
+    height: auto;
+   
+    animation: slide 2s ease-in-out infinite;  /*Apply the slide animation */
+}
+
+/* Adjust the position of each SVG element as needed */
+#svg-element-1 { bottom: 420px; left: 250px; }
+#svg-element-2 { bottom: 250px; left: 470px; width:50px;}
+#svg-element-3 { bottom: 100px; left: 220px;
+width: 50px; }
+#svg-element-4 { bottom: 30px; left: 300px;
+width: 50px; }
+#svg-element-5 { bottom: 5px; left: 400px; width: 50px;}
+#svg-element-6 { top: 200px; left: 420px;
+width: 50px; }
+
+.background-image img {
+    position: relative;
+    z-index: 1; /* Ensure the background image appears behind SVG elements */
+}
+
+/* panel-2 */
+
+.background-image-2 {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.background-image-2 img {
+    position: relative;
+    z-index: 1; /* Ensure the background image appears behind SVG elements */
+}
+
+#svg-element-7 { bottom: 420px; left: 250px; width:50px}
+#svg-element-8 { bottom: 100px; left: 150px; }
+#svg-element-9 { bottom: 50px; left: 420px;  }
+
+
+/* animations */
+
+@keyframes slide {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+
+
 /* video css ------------------------------------------*/
 
 .video-container {
@@ -1317,7 +1389,39 @@ form {
 
 
 
+    /* comic */
 
+/* panel-1 */
+    
+.svg-element {
+    width: 200px; /* Adjust width as needed */
+    height: auto; /* Automatically adjust height */
+}
+
+/* Adjust the position of each SVG element for tablet */
+#svg-element-1 { bottom: 850px; left: 350px; }
+#svg-element-2 { bottom: 600px; left: 760px;  width: 100px;}
+#svg-element-3 { bottom: 440px; left: 300px; width: 100px;}
+#svg-element-4 { bottom: 400px; left: 400px; width: 100px;}
+#svg-element-5 { bottom: 400px; left: 650px; width: 100px;}
+#svg-element-6 { top: -140px; left: 650px; width: 100px;}
+
+
+#svg-element-7 { bottom: 800px; left: 300px; width:100px}
+#svg-element-8 { bottom: 300px; left: 150px; }
+#svg-element-9 { bottom: 350px; left: 700px;  }
+
+
+
+
+
+/* panel-2 */
+
+.background-image-2 {
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: -100px;
+}
 
 
 
@@ -1475,6 +1579,36 @@ form {
 .blu{
    background-color: #0FE5F8;
 }
+
+    /* comic */
+
+/* panel-1 */
+.svg-element {
+    width: 300px; /* Adjust width as needed */
+    height: auto; /* Automatically adjust height */
+}
+
+/* Adjust the position of each SVG element for desktop */
+#svg-element-1 { bottom: 1200px; left: 500px;}
+#svg-element-2 { bottom: 950px; left: 1000px; width: 200px}
+#svg-element-3 { bottom: 850px; left: 340px;  width: 200px}
+#svg-element-4 { bottom: 850px; left: 500px;  width: 200px}
+#svg-element-5 { bottom: 1000px; left: 820px;  width: 200px}
+#svg-element-6 { top: -700px; left: 900px;  width: 200px}
+
+
+
+/* panel-2 */
+
+.background-image-2 {
+    position: relative;
+    margin-top: -500px;
+    margin-bottom: -300px;
+}
+
+#svg-element-7 { bottom: 1200px; left: 400px; width:200px}
+#svg-element-8 { bottom: 600px; left: 150px; }
+#svg-element-9 { bottom: 700px; left: 900px; }
 
 
 }
