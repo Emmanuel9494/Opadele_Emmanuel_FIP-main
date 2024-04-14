@@ -912,6 +912,16 @@ form {
     font-size: .625rem;
     text-align: center;
 }
+#fan-speak-covers {
+    position: absolute;
+    top: 1082px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.461);
+    width: 100%;
+    height: 66%;
+    z-index: 1;
+}
 /* footer end mobile*/
 
 
@@ -1480,7 +1490,16 @@ form {
     margin-bottom: -100px;
 }
 
-
+#fan-speak-covers {
+    position: absolute;
+    top: 1433px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.461);
+    width: 100%;
+    height: 86%;
+    z-index: 1;
+}
 
 
 }
@@ -1697,6 +1716,17 @@ form {
 #svg-element-8 { bottom: 600px; left: 150px; }
 #svg-element-9 { bottom: 700px; left: 900px; }
 
+
+#fan-speak-covers {
+    position: absolute;
+    top: 1668px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.461);
+    width: 100%;
+    height: 94%;
+    z-index: 1;
+}
 
 }
 
