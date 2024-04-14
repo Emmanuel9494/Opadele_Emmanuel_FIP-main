@@ -112,6 +112,33 @@ header, nav{
 }
 
 
+/* Styles for the lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 9999;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.lightbox-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Thank you text color */
+.thank-you-text {
+    color: #F78627;
+}
+
 /* =============================== */
 #menu-bar{
     height: 50px;
@@ -1126,10 +1153,16 @@ display: flex;
     padding: 25px 25px;
     color: white;
     justify-content: center;
-   
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
     text-align: center;
     margin-top: 80px;
     }
+
+    .buy-now:hover {
+        background-color: black;
+        color: #F78627;
+    }
+    
 
     .words{
         margin-top: 500px;
@@ -1505,10 +1538,16 @@ form {
         padding: 25px 25px;
         color: white;
         justify-content: center;
-       
+        transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
         text-align: center;
         margin-top: 200px;
         }
+
+        .buy-now:hover {
+            background-color: black;
+            color: #F78627;
+        }
+         
     
         .words{
             margin-top: 1000px;
